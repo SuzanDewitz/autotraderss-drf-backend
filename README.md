@@ -1,3 +1,59 @@
+## AUTOTRADER - A vehicle marketplace
+
+<br>
+
+* Autotrader is a vehicle marketplace platform designed for used cars, similar to CARSS. It allows users to create their own listing to sell their used car, 
+* as well as search for used cars if they are looking to buy a car. Users can register for the website and gain access to more features such as saving their 
+* favorite cars and following car dealerships to be aware of their latest inventory.
+* The backend API of Autotrader is based on the Django REST framework, which serves the front-end part of the project by retrieving and storing data in the database.
+*  The API is responsible for handling user authentication and authorization, managing user profiles and listings, and processing search queries
+
+<br>
+
+
+# Links to the Frontend Project
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
