@@ -36,7 +36,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',    '127.0.0.1',
+                 '8000-suzandewitz-autotraders-q5k22a7on9.us2.codeanyapp.com',]
 
 
 # Application definition
@@ -50,6 +51,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'profiles',
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
