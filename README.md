@@ -1,5 +1,10 @@
 ## AUTOTRADER - A vehicle marketplace
 
+<p align="center">
+  <h1 style="font-size: 36px;">- AUTOTRADER - A vehicle marketplace</h1>
+</p>
+
+
 <br>
 
 * Autotrader is a vehicle marketplace platform designed for used cars, similar to CARSS. It allows users to create their own listing to sell their used car, 
