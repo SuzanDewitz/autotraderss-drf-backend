@@ -1,7 +1,5 @@
-## AUTOTRADER - A vehicle marketplace
-
 <p align="center">
-  <h1 style="font-size: 36px;">- AUTOTRADER - A vehicle marketplace</h1>
+  <h1 style="font-size: 36px;">AUTOTRADER - A vehicle marketplace</h1>
 </p>
 
 
@@ -17,6 +15,32 @@
 
 
 #### Links to the Frontend Project
+
+ - Backend - Reposito
+ - Backend - Deployment
+
++ User Experience (UX)
+ - User Stories
+ - Agile Methodology
+ - Design
+ - Wireframes
++ Features
+ - Future Features
++ Technologies Used
+ - Languages Used
+ - Frameworks Used
++ Testing
+ - Bugs
+  * Fixed Bugs
+  * Remaining Bugs
++ Deployment
+ - Forking the GitHub Repository
+ - Making a Local Clone
+ - Deploying with Heroku
++ Credits
+ - Code
+ - Media
+  - Acknowledgments
 
 <br>
 <br>
