@@ -20,9 +20,9 @@ if os.path.exists('env.py'):
     import env
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'duu7xkafm',
-    'API_SECRET': 'qsAlEONavj8RPDHJ3NW2czuB-w0',
-    'API_KEY': '568294371921959'
+    'CLOUD_NAME': 'ditfekkky',
+    'API_SECRET': '_kmeZ0OV-f-j0Glhe_spJ2ui-1Y',
+    'API_KEY': '521356626465316'
 }
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -36,11 +36,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-8f%(7h06u39=8)!==8gyxvu=&3jn264te+*magzela_)vn$a@8'
 
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',    '127.0.0.1',
-                 '8000-suzandewitz-autotraders-q5k22a7on9.us2.codeanyapp.com',]
+ALLOWED_HOSTS = ['8000-suzandewitz-autotraders-ippvatnk9a.us2.codeanyapp.com']
+
 
 
 # Application definition

@@ -19,8 +19,7 @@ class Profile(models.Model):
     email = models.CharField(max_length=50)
     phone = models.CharField(max_length=14)
     image = models.ImageField(
-        upload_to='images/', default='../default_profile_enctdp_h9peaa'
-
+            upload_to='images/', default='../default_profile_enctdp'
     )
 
     class Meta:
