@@ -9,8 +9,8 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-            "message": "Welcome to the CARSS DRF-API",
-            "documentation": "https://github.com/ErikHgm/carss-drf-backend",
+            "message": "Welcome to the AUTOTRADERS DRF-API",
+            "documentation": "https://github.com/SuzanDewitz/autotraders-drf-backend",
         })
 
 
