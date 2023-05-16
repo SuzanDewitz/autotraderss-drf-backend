@@ -2,12 +2,11 @@ from rest_framework import serializers
 from .models import Profile
 
 
-
 class ProfileSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     following_id = serializers.SerializerMethodField()
-    cars_count = serializers.ReadOnlyField()
+    autotraders_count = serializers.ReadOnlyField()
     followers_count = serializers.ReadOnlyField()
     following_count = serializers.ReadOnlyField()
 
