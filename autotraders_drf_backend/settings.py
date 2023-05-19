@@ -36,9 +36,11 @@ SECRET_KEY = 'django-insecure-8f%(7h06u39=8)!==8gyxvu=&3jn264te+*magzela_)vn$a@8
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
 
-
+ALLOWED_HOSTS = [
+    '8000-suzandewitz-autotraders-9n9gdt4a27p.ws-eu97.gitpod.io',
+    # Add any other allowed hosts here
+]
 
 
 # Application definition
@@ -57,6 +59,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'dj_rest_auth',
     'profiles',
+    'autotraders',
 ]
 
 MIDDLEWARE = [
