@@ -3,7 +3,7 @@ from rest_framework import generics, permissions, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Profile
 from .serializers import ProfileSerializer
-from autotraderss_drf_backend .permissions import IsOwnerOrReadOnly
+from autotraderss_drf_backend.permissions import IsOwnerOrReadOnly
 
 
 
