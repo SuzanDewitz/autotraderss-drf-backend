@@ -3,7 +3,7 @@ from rest_framework import generics, permissions, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Profile
 from .serializers import ProfileSerializer
-from autotraderss_drf_backend.permissions import IsOwnerOrReadOnly
+from autotraders_drf_backend.permissions import IsOwnerOrReadOnly
 
 
 
@@ -18,8 +18,6 @@ class ProfileList(generics.ListAPIView):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.annotate(
         autotraders_count=Count('owner__autotrader', distinct=True),
-        followers_count=Count('owner__followed', distinct=True),
-        following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
     filter_backends = [
         filters.OrderingFilter,
@@ -31,10 +29,6 @@ class ProfileList(generics.ListAPIView):
     ]
     ordering_fields = [
         'autotraders_count',
-        'followers_count',
-        'following_count',
-        'owner__following__created_at',
-        'owner__followed__created_at',
     ]
 
 
@@ -42,7 +36,5 @@ class ProfileDetails(generics.RetrieveUpdateAPIView):
     serializer_class = ProfileSerializer
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Profile.objects.annotate(
-        autotraders_count=Count('owner__autotraders', distinct=True),
-        followers_count=Count('owner__followed', distinct=True),
-        following_count=Count('owner__following', distinct=True)
+        autotraders_count=Count('owner__autotrader', distinct=True),
     ).order_by('-created_at')
