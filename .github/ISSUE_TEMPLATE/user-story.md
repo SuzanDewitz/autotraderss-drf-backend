@@ -16,6 +16,3 @@ As an administrator of the vehicle marketplace platform designed for used cars, 
 - [Criteria 1]
 - [Criteria 2]
 - [Criteria 3]
-
-
-
