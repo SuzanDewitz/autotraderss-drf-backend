@@ -20,7 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api_auth/', include('rest_framework.urls')),
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
-    path('', include('autotraders.urls')),
     path('', include('profiles.urls')),
+    path('', include('autotraders.urls')),
+    path('', include('saved.urls')),
     path('', include('followers.urls')),
 ]

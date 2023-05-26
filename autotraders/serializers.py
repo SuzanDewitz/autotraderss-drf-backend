@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import Autotrader
+from saved.models import Save
+
 
 class AutotraderSerializer(serializers.ModelSerializer):
     """ Autotrader Serializer """ 
@@ -35,4 +37,4 @@ class AutotraderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Autotrader 
-        fields = ['id', 'owner', 'is_owner', 'profile_id', 'profile_image', 'save_id']
+        fields = '__all__'
