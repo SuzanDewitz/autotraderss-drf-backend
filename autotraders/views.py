@@ -1,5 +1,5 @@
 from rest_framework import generics, permissions, filters
-from autotraders_drf_backend.permissions import IsOwnerOrReadOnly
+from autotraderss_drf_backend.permissions import IsOwnerOrReadOnly
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Autotrader
 from .serializers import AutotraderSerializer

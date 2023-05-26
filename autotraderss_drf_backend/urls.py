@@ -1,4 +1,4 @@
-"""autotraders_drf_backend URL Configuration
+"""autotraderss_drf_backend URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -22,4 +22,5 @@ urlpatterns = [
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('', include('autotraders.urls')),
     path('', include('profiles.urls')),
+    path('', include('followers.urls')),
 ]

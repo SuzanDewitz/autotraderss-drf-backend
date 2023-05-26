@@ -22,6 +22,7 @@ CLOUDINARY_STORAGE = {
 MEDIA_URL = '/media/'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -60,8 +61,10 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'profiles',
     'autotraders',
+    'followers',
 ]
 
+SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -72,7 +75,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'autotraders_drf_backend.urls'
+ROOT_URLCONF = 'autotraderss_drf_backend.urls'
 
 TEMPLATES = [
     {
@@ -90,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'autotraders_drf_backend.wsgi.application'
+WSGI_APPLICATION = 'autotraderss_drf_backend.wsgi.application'
 
 
 # Database
