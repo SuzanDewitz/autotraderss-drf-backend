@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'profiles',
     'autotraders',
+    'saved',
     'followers',
 ]
 
