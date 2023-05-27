@@ -23,7 +23,7 @@
 - [User Stories](#user-stories)
 - [Database Schema](#database-schema)
 - [Features](#features)
-- [Future Features](#future-features)
+     - [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
 - [Languages and Frameworks Used](#languages-and-frameworks-used)
 - [Python Modules Used](#python-modules-used)
