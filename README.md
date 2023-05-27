@@ -20,27 +20,28 @@
  - Backend - Deployment
 
 + [User Experience (UX)](#user-experience-ux)
- - User Stories
- - Agile Methodology
- - Design
- - Wireframes
-+ Features
- - Future Features
-+ Technologies Used
- - Languages Used
- - Frameworks Used
-+ Testing
- - Bugs
-  * Fixed Bugs
-  * Remaining Bugs
-+ Deployment
- - Forking the GitHub Repository
- - Making a Local Clone
- - Deploying with Heroku
-+ Credits
- - Code
- - Media
-  - Acknowledgments
+- [User Stories](#user-stories)
+- [Agile Methodology](#agile-methodology)
+- [Design](#design)
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Languages Used](#languages-used)
+- [Frameworks Used](#frameworks-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Fixed Bugs](#fixed-bugs)
+- [Remaining Bugs](#remaining-bugs)
+- [Deployment](#deployment)
+- [Forking the GitHub Repository](#forking-the-github-repository)
+- [Making a Local Clone](#making-a-local-clone)
+- [Deploying with Heroku](#deploying-with-heroku)
+- [Credits](#credits)
+- [Code](#code)
+- [Media](#media)
+- [Acknowledgments](#acknowledgments)
+
 
 <br>
 <br>
