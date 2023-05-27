@@ -21,14 +21,14 @@
 
 + [User Experience (UX)](#user-experience-ux)
 - [User Stories](#user-stories)
-- [Agile Methodology](#agile-methodology)
-- [Design](#design)
-- [Wireframes](#wireframes)
+- [Database Schema](#database-schema)
 - [Features](#features)
 - [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
-- [Languages Used](#languages-used)
-- [Frameworks Used](#frameworks-used)
+- [Languages and Frameworks Used](#languages-and-frameworks-used)
+- [Python Modules Used](#python-modules-used)
+- [Packages Used](#packages-used)
+- [Programs and Tools Used](#programs-and-tools-used)
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Fixed Bugs](#fixed-bugs)
@@ -39,8 +39,8 @@
 - [Deploying with Heroku](#deploying-with-heroku)
 - [Credits](#credits)
 - [Code](#code)
-- [Media](#media)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgements](#acknowledgements)
+
 
 
 <br>
