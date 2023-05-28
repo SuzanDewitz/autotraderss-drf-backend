@@ -45,6 +45,25 @@
 
 <br>
 <br>
+
+# User Stories
+
+- The primary objective of the API is to establish seamless communication between the backend and frontend components, enabling the fulfillment of user stories exclusively designed for the frontend aspect of the project. Below, you will find a comprehensive inventory of the user stories specifically tailored for the frontend:
+
+1. Improve the user registration process by implementing a user-friendly interface with clear instructions and error handling.
+2. Enhance the login functionality by incorporating additional security measures, such as two-factor authentication and password encryption.
+3. Develop a visually appealing homepage that showcases the project's key features and provides easy access to relevant information.
+4. Create an intuitive navigation menu that enables users to effortlessly browse through different sections and functionalities of the application.
+5. Implement a search feature that allows users to quickly find specific content or items within the application.
+6. Design an interactive dashboard that provides users with personalized insights, statistics, and notifications based on their preferences and activities.
+7. Enable users to customize their profile by adding profile pictures, personal information, and preferences.
+8. Build a robust messaging system that enables users to communicate with each other, facilitating seamless collaboration and information exchange.
+9. Integrate social media sharing options to allow users to share their achievements, content, or experiences with their social networks.
+10. Optimize the application's performance and loading times by implementing efficient caching mechanisms and minimizing unnecessary data transfers.
+
+- Tasks were implemented as part of the development process for the API, a list of the tasks can be found on the project's.
+
+
 <br>
 <br>
 
