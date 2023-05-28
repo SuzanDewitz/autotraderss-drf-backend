@@ -71,10 +71,34 @@
 
 
 ## Database Schema
-+ The database models for the project were created based on the schema below.
-
++ The database schema depicted below served as the foundation for creating the project's database models.
+![dbschema](docs/dbschema.png)
 
 <br>
+
+
+## Future Features:
+
+- Enhanced Search Options and Filters: Expand the search capabilities by incorporating additional options and filters based on various criteria.
+
+- Buyer Rating System: Introduce a rating system to enable buyers to rate sellers, enhancing trust and credibility within the service.
+
+- Location Algorithm: Implement an algorithm to facilitate location-based searches, enabling users to find cars and sellers within a specific distance.
+
+- Image Gallery Functionality: Integrate an image gallery feature that empowers sellers to upload multiple pictures of the autotraders, providing a more comprehensive visual representation.
+
+<br>
+
+## Technologies Used
+Languages and Frameworks Used
+ - Python: [Python](https://www.python.org/)
+ - Django 3.2.14: [Django 3.2.14](https://pypi.org/project/Django/3.2.14/)
+ - Django Rest Framework 3.14.0: [Django Rest Framework 3.14.0](https://pypi.org/project/djangorestframework/3.14.0/)
+
+<br>
+
+<br>
+
 
 
 
