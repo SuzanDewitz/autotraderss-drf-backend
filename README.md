@@ -97,16 +97,43 @@ Languages and Frameworks Used
 
 <br>
 
+## Python Modules Used
+- Built-in Packages/Modules
+  + [pathlib](https://docs.python.org/3/library/pathlib.html)- Used to work with filepaths.
+  + [os](https://docs.python.org/3/library/os.html) - Provides a portable way of using operating system-dependent functionality.
+
 <br>
 
+## Packages Used
+- External Python Packages
+   + [cloudinary](https://pypi.org/project/cloudinary/) - Integration with Cloudinary for handling cloud-based media storage.
+   + [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/) - Integration with Cloudinary for storage backend in Django.
+   + [dj-database-url](https://pypi.org/project/dj-database-url/) - Allows the use of 'DATABASE_URL' environmental variable in the Django project settings file to connect to a PostgreSQL database.
+   + [django-allauth](https://pypi.org/project/django-allauth/) - Set of Django application used for account registration, management and authentication.
+   + [dj-rest-auth](https://pypi.org/project/dj-rest-auth/) - API endpoints for handling authentication in Django Rest Framework.
+   + [django-filter](https://pypi.org/project/django-filter/) - Application that enables dynamic QuerySet filtering based on URL parameters.
+   + [djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/) - JSON Web Token authentication backend for the Django REST Framework.
+   + [django-cors-headers](https://pypi.org/project/django-cors-headers/) - Django app that adds Cross-Origin Resource Sharing (CORS) headers to responses.
+   + [gunicorn](https://pypi.org/project/gunicorn/) - Python WSGI HTTP Server for hosting Django applications.
+   + [Pillow](https://pypi.org/project/Pillow/) - Fork of PIL, the Python Imaging Library, providing image processing capabilities.
+   + [psycopg2](https://pypi.org/project/psycopg2/) - Python PostgreSQL database adapter.
+   + [python-dotenv](https://pypi.org/project/python-dotenv/) - Utility for setting key-value pairs from a .env file as environmental variables.
 
+<br>
 
+## Programs and Tools Used
+[drawSQL](https://drawsql.app/)-  Used to create the Database Schema/ERD (Entity-Relationship Diagram) for the project.
+[Gitpod](https://gitpod.io/workspaces)
+Gitpod was utilized as the primary code editor for this project, providing a cloud-based development environment.
+[Git](https://git-scm.com/)
+Git was used for version control throughout the project. The terminal was utilized to commit changes to Git and push them to the project's repository.
+[GitHub](https://github.com/)
+ GitHub served as the remote repository for storing the project's code after it was pushed from Git. It provided collaboration features, issue tracking, and a centralized location for code hosting.
 
+<br>
 
-
-
-
-
+## Testing
+- A separate document for testing can be found here.
 
 
 
