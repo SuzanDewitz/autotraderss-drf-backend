@@ -28,7 +28,7 @@
      - [Languages and Frameworks Used](#languages-and-frameworks-used)
      - [Python Modules Used](#python-modules-used)
      - [Packages Used](#packages-used)
-      - [Programs and Tools Used](#programs-and-tools-used
+      - [Programs and Tools Used](#programs-and-tools-used)
 - [Testing](#testing)
      - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
