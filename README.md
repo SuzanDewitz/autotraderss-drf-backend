@@ -133,7 +133,99 @@ Git was used for version control throughout the project. The terminal was utiliz
 <br>
 
 ## Testing
-- A separate document for testing can be found here.
+- A separate document for testing can be found [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/TESTING.md).
+
+## Bugs
+### Fixed Bugs
+Click here to view a list of fixed bugs that has been completed.
+### Remaining Bugs
+No known remaining bugs
+
+<br>
+
+## Deployment
+### Forking the GitHub Repository
+1. Go to the project repository
+2. In the right most top menu, click the "Fork" button.
+3. There will now be a copy of the repository in your own GitHub account.
+
+<br>
+
+## Making a local clone
+1. Go to the project repository
+2. Click on the "Code" button.
+3. Choose one of the three options (HTTPS, SSH or GitHub CLI) and then click copy.
+4. Open the terminal in you IDE program.
+5. Type git clone and paste the URL that was copied in step 3.
+6. Press Enter and the local clone will be created.
+
+<br>
+
+## Alternatively by using Gitpod:
+1. Go to the project repository
+2. Click the green button that says "Gitpod" and the project will now open up in Gitpod.
+
+<br>
+
+## Deploying with Heroku
+I followed the below steps using the Code Institute tutorial:
+
+The following command in the Gitpod CLI will create the relevant files needed for Heroku to install your project dependencies pip3 freeze --local > requirements.txt. Please note this file should be added to a .gitignore file to prevent the file from being committed.
+
+1. Go to [Heroku.com](https://id.heroku.com/login) and log in; if you do not already have an account then you will need to create one.
+2. Click the New dropdown and select Create New App.
+3. Enter a name for your new project, all Heroku apps need to have a unique name, you will be prompted if you need to change it.
+4. Select the region you are working in.
+
+<br>
+
+### Heroku Settings
+- You will need to set your Environment Variables - this is a key step to ensuring your application is deployed properly.
+
+1. In the Settings tab, click on Reveal Config Vars and set the following variables:
+ + Key as ALLOWED_HOSTS and the value as the name of you project with '.herokuapp.com' appended to the end e.g. example-app.herokuapp.com. Click the Add button.
+ + Key as CLOUDINARY_URL and the value as your cloudinary API Environment variable e.g. cloudinary://**************:**************@*********. Click the Add button.
+  + Key as SECRET_KEY and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as https://djecrety.ir. Click the Add button.
+  + Ensure the key DATABASE_URL is already populated. This should have been created automatically by Heroku.
+  + The DATABASE_URL should be copied into your local .env, created during the cloning process.
+  + To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key CLIENT_ORIGIN with the value set as the URL you will be sending the authentication request from.
+   + Additionally, a CLIENT_ORIGIN_DEV key can be set with the value of a development server (IP or URL) for use during local development.
+
+<br>
+
+## Heroku Deployment
+In the Deploy tab:
+
+
+1. Connect your Heroku account to your Github Repository following these steps:
+    + Click on the Deploy tab and choose Github-Connect to Github.
+    + Enter the GitHub repository name and click on Search.
+    + Choose the correct repository for your application and click on Connect.
+2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the Deploy Branch button whenever you want a change made.
+3. Once you have chosen your deployment method and have clicked Deploy Branch your application will be built and you should now see the View button, click this to open your application.
+## Credits
+
+<br>
+<br>
+
+## Online resources
+[Django Documentation](https://docs.djangoproject.com/en/3.2/)
+[Django REST Documentation](https://www.django-rest-framework.org/)
+[Python Documentation](https://docs.python.org/3/)
+
+<br>
+
+## Code
+Code Institute DRF Tutorial Project, used through as a basis for the creation of this API
+CREDIT: Code Institute DRF-API Tutuorial Project
+URL: https://github.com/Code-Institute-Solutions/drf-api
+
+<br>
+
+## Acknowledgements
+The tutor support team at Code Institute for their support.
+My Code Institute Mentor for feedback and suggestions.
+The Code Institute Slack community.
 
 
 
@@ -161,44 +253,3 @@ Git was used for version control throughout the project. The terminal was utiliz
 
 
 
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **March 3rd, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
