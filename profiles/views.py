@@ -6,7 +6,6 @@ from .serializers import ProfileSerializer
 from autotraderss_drf_backend.permissions import IsOwnerOrReadOnly
 
 
-
 class IsOwnerOrReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         if request.method in permissions.SAFE_METHODS:
@@ -18,6 +17,8 @@ class ProfileList(generics.ListAPIView):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.annotate(
         autotraders_count=Count('owner__autotrader', distinct=True),
+        followers_count=Count('owner__followed', distinct=True),
+        following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
     filter_backends = [
         filters.OrderingFilter,
@@ -29,6 +30,10 @@ class ProfileList(generics.ListAPIView):
     ]
     ordering_fields = [
         'autotraders_count',
+        'followers_count',
+        'following_count',
+        'owner__following__created_at',
+        'owner__followed__created_at',
     ]
 
 
@@ -41,4 +46,6 @@ class ProfileDetails(generics.RetrieveUpdateAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Profile.objects.annotate(
         autotraders_count=Count('owner__autotrader', distinct=True),
+        followers_count=Count('owner__followed', distinct=True),
+        following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
