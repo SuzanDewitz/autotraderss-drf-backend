@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from autotraders.models import  Autotrader
+from autotraders.models import Autotrader
 
 
 class Save(models.Model):
