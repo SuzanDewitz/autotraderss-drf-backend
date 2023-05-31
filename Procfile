@@ -1,2 +1,2 @@
 release: python manage.py makemigrations && python manage.py migrate
-web: gunicorn autotraderss_drf_backend
+web: gunicorn autotraderss_drf_backend.wsgi
