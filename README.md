@@ -216,9 +216,9 @@ In the Deploy tab:
 <br>
 
 ## Code
-Code Institute DRF Tutorial Project, used through as a basis for the creation of this API
-CREDIT: Code Institute DRF-API Tutuorial Project
-URL: https://github.com/Code-Institute-Solutions/drf-api
+ - Code Institute DRF Tutorial Project, used through as a basis for the creation of this API
+   + CREDIT: Code Institute DRF-API Tutuorial Project
+   + URL: https://github.com/Code-Institute-Solutions/drf-api
 
 <br>
 
