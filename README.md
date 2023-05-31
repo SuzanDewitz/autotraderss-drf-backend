@@ -13,11 +13,16 @@
 
 <br>
 
+[View the live project here.](https://autotraderss-drf-backend.herokuapp.com/)
 
 #### Links to the Frontend Project
 
- - Backend - Reposito
+ - Backend - Repository
  - Backend - Deployment
+
+<br>
+
+ ## Table of Contents
 
 + [User Experience (UX)](#user-experience-ux)
 - [User Stories](#user-stories)
