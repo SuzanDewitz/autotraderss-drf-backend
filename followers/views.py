@@ -9,6 +9,7 @@ class FollowerList(generics.ListCreateAPIView):
     List all instances of a user
     following another user'.
     """
+
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Follower.objects.all()
     serializer_class = FollowerSerializer
@@ -18,7 +19,7 @@ class FollowerList(generics.ListCreateAPIView):
 
 
 class FollowerDetails(generics.RetrieveDestroyAPIView):
-    """ Retrieve a follower """
+    """Retrieve a follower"""
 
     permission_classes = [IsOwnerOrReadOnly]
     queryset = Follower.objects.all()
