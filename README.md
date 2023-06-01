@@ -337,6 +337,9 @@ os.environ['DATABASE_URL'] = 'postgres://YOURLINK'
 - Add a Procfile to the top level of the directory and add the following code:
  release: python manage.py makemigrat
 
+ release: python manage.py makemigrations && python manage.py migrate
+web: gunicorn drf_api.wsgi
+
  - release: python manage.py makemigrations && python manage.py migrate
     web: gunicorn autotraderss_drf_backend.wsgi
 
