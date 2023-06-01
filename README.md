@@ -2,7 +2,6 @@
   <h1 style="font-size: 36px;">Autotrader API</h1>
 </p>
 
-
 <br>
 
 * Autotrader is a vehicle marketplace platform designed for used cars, similar to CARSS. It provides a platform for users to create their own listings and sell their used cars.
@@ -29,7 +28,8 @@
 
  ## Table of Contents
 
-+ [User Experience (UX)](#user-experience-ux)
+### [User Experience (UX)](#user-experience-ux)
+
 - [User Stories](#user-stories)
 - [Database Schema](#database-schema)
 - [Features](#features)
@@ -352,7 +352,7 @@ import os
 
  8. In settings.py at the top of MIDDLEWARE add corsheaders middleware
 
-   -  
+     
                     MIDDLEWARE = [
                       'corsheaders.middleware.CorsMiddleware',
                       'django.middleware.security.SecurityMiddleware',
