@@ -1,15 +1,20 @@
 # User Stories 
 
+## Authentication
+1. As a user, I want to be able to create an account so that I can access all website features.
+2. As a user, I want to be able to log in so that I can use the features available for existing users.
+3. As a user, I want to be able to log out so that I can safely exit my account.
+4. As a user, I want to see my login status (whether I am logged in or logged out) so that I can make informed decisions about the actions I want to take.
+ 
 ## Autotrader
-1. As a User
-2. As a user, I want to be able to create an account so that I can access all the features of Autotrader.
-3. As a user, I want to be able to log in so that I can manage my account and interact with the platform.
-4. As a user, I want to be able to log out so that I can securely exit my account.
-5. As a user, I want to be able to search for used cars based on various criteria such as make, model, year, price range, and location, so that I can find the desired vehicle.
-6. As a user, I want to view detailed information and images of each listed car, including its specifications, mileage, condition, and seller details, so that I can make an informed decision.
-7. As a user, I want to be able to contact the sellers of the listed cars to inquire about additional information or schedule a test drive.
-8. As a user, I want to be able to save and track my favorite cars on Autotrader, so that I can easily access them later.
-9. As a user, I want to be able to leave reviews and ratings for the sellers and their listed cars, so that I can share my experience and help other users make informed decisions.
+1. As a user, I want to be able to create an account so that I can access all the features of Autotrader.
+2. As a user, I want to be able to log in so that I can manage my account and interact with the platform.
+3. As a user, I want to be able to log out so that I can securely exit my account.
+4. As a user, I want to be able to search for used cars based on various criteria such as make, model, year, price range, and location, so that I can find the desired vehicle.
+5. As a user, I want to view detailed information and images of each listed car, including its specifications, mileage, condition, and seller details, so that I can make an informed decision.
+6. As a user, I want to be able to contact the sellers of the listed cars to inquire about additional information or schedule a test drive.
+7. As a user, I want to be able to save and track my favorite cars on Autotrader, so that I can easily access them later.
+8. As a user, I want to be able to leave reviews and ratings for the sellers and their listed cars, so that I can share my experience and help other users make informed decisions.
 
 ## Admin
 1. As an admin, I want to be able to manage user accounts, including the ability to suspend or delete accounts, to ensure the platform's integrity and security.
