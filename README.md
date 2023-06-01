@@ -120,7 +120,8 @@
 <br>
 
 ## Validation
- - Validation was conducted thorught Code Institute [PEP8](https://pep8ci.herokuapp.com/#) tool, it passed with no errors.
+#### Python Validation (PEP8)
+ - All Python code was manually checked using CI Python Linter The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed and blank lines. Re-testing did not reveal any errors.
 
  - Settings.py and contact model, present some line too long warnings, ignored momentarily.
 
@@ -128,10 +129,12 @@
 
 ## Bugs
 ### Fixed Bugs
-Click here to view a list of fixed bugs that has been completed.
+
+
 ### Remaining Bugs
 No known remaining bugs
 
+ ![image](./docs/img/validator/settings.py.png)
 <br>
 
 ## Technologies Used
@@ -226,6 +229,9 @@ No known remaining bugs
 <br>
 
 2. Creating Heroku App
+
+
+[Back to top](#top)
 
 
 ### Heroku Settings
@@ -475,14 +481,7 @@ import os
 
 ## Credits
 
- - During the project setup and development, I extensively consulted the documentation provided by Code Institute, including the Django Rest documentation and various Django 
-   functionality links. The resources provided valuable insights and guidance throughout the project
- - I am grateful to the Code Institute tutors for their assistance during the setup process and for helping me resolve version-related issues. Their explanations and suggestions were invaluable in 
-   overcoming the challenges I encountered.
- - I would also like to express my heartfelt appreciation to my husband,  <span style="color: blue;">Dietmar Dewitz</span>,, for his unwavering support and guidance during the setup and delivery  
-   of the project. His assistance was instrumental in the successful completion of the project
-
-## Online resources
+ ## Online resources
 
 - [Django Documentation](https://docs.djangoproject.com/en/3.2/)
 
@@ -500,10 +499,19 @@ import os
 <br>
 
 ## Acknowledgements
-The tutor support team at Code Institute for their support.
-My Code Institute Mentor for feedback and suggestions.
-The Code Institute Slack community.
+- During the project setup and development, I extensively consulted the documentation provided by Code Institute, 
+  including the Django Rest documentation and various Django functionality links. The resources provided valuable insights
+  and guidance throughout the project.
+- The Code Institute Slack community for their invaluable assistance and support throughout the course.
+- I am grateful to the Code Institute tutors for their assistance during the setup process and for helping me resolve 
+  version-related issues. Their explanations and suggestions were invaluable in overcoming the challenges I encountered.
+- I would also like to express my heartfelt appreciation to my husband,<a href="#" style="color: blue; text-decoration:none;">
+  Dietmar Dewitz</a>, for his unwavering support and guidance during the setup and delivery of the project.
+  His assistance was instrumental in the successful completion of the project.
 
+<br>
+
+[Back to top](#top)
 
 
 
