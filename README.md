@@ -282,16 +282,16 @@ In the Deploy tab:
           Database
           https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-       if 'DEV' in os.environ:
+          if 'DEV' in os.environ:
             DATABASES = {
             'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
             }
           }
-       else:
+         else:
           print("loading postgres ele")
-       DATABASES = {
+            DATABASES = {
           'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
          }
     
@@ -300,101 +300,100 @@ In the Deploy tab:
 3. In env.py file, add a new environment variable to Gitpod with the key set to DATABASE_URL, and the value to your ElephantSQL database URL
 import os
 
-os.environ['CLOUDINARY_URL'] = 'cloudinary://YOURLINK'
+              os.environ['CLOUDINARY_URL'] = 'cloudinary://YOURLINK'
 
-# os.environ['DEV'] = '1'
+              # os.environ['DEV'] = '1'
 
-os.environ['DATABASE_URL'] = 'postgres://YOURLINK'
+             os.environ['DATABASE_URL'] = 'postgres://YOURLINK'
 
     
 
 
 4. In the terminal make migrations:
 
-  python3 manage.py makemigrations --dry-run
-  python3 manage.py migrate
+            python3 manage.py makemigrations --dry-run
+              python3 manage.py migrate
   
-  - Create a superuser for your new database
+           Create a superuser for your new database
 
-  - python3 manage.py createsuperuser
+             python3 manage.py createsuperuser
 
 ##### Follow the steps to create your superuser username and password
 
 5. To confirm that Database is connceted, on the ElephantSQL page on the left s select “BROWSER”
 
-- Click the Table queries button, select auth_user
+  - Click the Table queries button, select auth_user
 
-- Click “Execute”, you should see the superuser details. This confirms the tables have been created and you can add data to your database
+   - Click “Execute”, you should see the superuser details. This confirms the tables have been created and you can add data to your database
 
-- In Gitpod teminal install gunicorn library:
+   - In Gitpod teminal install gunicorn library:
 
-- pip3 install gunicorn django-cors-headers
+           pip3 install gunicorn django-cors-headers
 
-- Update requirements.txt bit running command:
+    - Update requirements.txt bit running command:
 
-- pip freeze --local > requirements.txt
+            pip freeze --local > requirements.txt
 
-- Add a Procfile to the top level of the directory and add the following code:
- release: python manage.py makemigrat
+       - Add a Procfile to the top level of the directory and add the following code:
+        release: python manage.py makemigrat
 
- release: python manage.py makemigrations && python manage.py migrate
-web: gunicorn drf_api.wsgi
+ 
 
- - release: python manage.py makemigrations && python manage.py migrate
-    web: gunicorn autotraderss_drf_backend.wsgi
+          - release: python manage.py makemigrations && python manage.py migrate
+             web: gunicorn autotraderss_drf_backend.wsgi
 
 6. In settings.py update the value of the ALLOWED_HOSTS variable to include your Heroku app’s URL
 
- - ALLOWED_HOSTS = ['localhost', 'autotraderss-drf-backend.herokuapp.com']
+                  - ALLOWED_HOSTS = ['localhost', 'autotraderss-drf-backend.herokuapp.com']
 
  7. In settings.py inside INSTALLED_APPS add corsheaders:
 
-    -  'corsheaders',
+                          -  'corsheaders',
 
  8. In settings.py at the top of MIDDLEWARE add corsheaders middleware
 
    -  
- MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+                    MIDDLEWARE = [
+                      'corsheaders.middleware.CorsMiddleware',
+                      'django.middleware.security.SecurityMiddleware',
+                      'django.contrib.sessions.middleware.SessionMiddleware',
+                      'django.middleware.common.CommonMiddleware',
+                      'django.middleware.csrf.CsrfViewMiddleware',
+                      'django.contrib.auth.middleware.AuthenticationMiddleware',
+                      'django.contrib.messages.middleware.MessageMiddleware',
+                      'django.middleware.clickjacking.XFrameOptionsMiddleware',
+                      ]
 
 
  9. Under the MIDDLEWARE list, set the ALLOWED_ORIGINS for the network requests made to the server with the following code:
 
  10. In settings.py set allowed origins for network requests and enable cookies
 
-   - if 'CLIENT_ORIGIN' in os.environ:
-      CORS_ALLOWED_ORIGINS = [
-        os.environ.get('CLIENT_ORIGIN')
-     ]
+                     - if 'CLIENT_ORIGIN' in os.environ:
+                      CORS_ALLOWED_ORIGINS = [
+                     os.environ.get('CLIENT_ORIGIN')
+                     ]
 
-   - if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
-    CORS_ALLOWED_ORIGIN_REGEXES = [
-        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
-    ]
+                    - if 'CLIENT_ORIGIN_DEV' in os.environ:
+                     extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
+                      CORS_ALLOWED_ORIGIN_REGEXES = [
+                       rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+                       ]
 
-  - CORS_ALLOW_CREDENTIALS = True
+                    - CORS_ALLOW_CREDENTIALS = True
 
   11. In settings.py et the JWT_AUTH_SAMESITE to 'None'. Without this the cookies would be blocked:
 
-   - REST_USE_JWT = True
-   - JWT_AUTH_SECURE = True
-   - JWT_AUTH_COOKIE = 'my-app-auth'
-   - JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
-   - JWT_AUTH_SAMESITE = 'None'
+                    REST_USE_JWT = True
+                    JWT_AUTH_SECURE = True
+                    JWT_AUTH_COOKIE = 'my-app-auth'
+                    JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
+                    JWT_AUTH_SAMESITE = 'None'
 
 
  12. In env.py, set SECRET_KEY value to a random value:
 
-   - os.environ['SECRET_KEY'] = 'random value here'
+                  os.environ['SECRET_KEY'] = 'random value here'
 
  13. In settings.py, replace the default SECRET_KEY variable as follows:
  
