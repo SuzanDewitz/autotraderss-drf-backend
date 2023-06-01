@@ -54,6 +54,7 @@
 # User Stories
 
 - The primary objective of the API is to establish seamless communication between the backend and frontend components, enabling the fulfillment of user stories exclusively designed for the frontend aspect of the project. Below, you will find a comprehensive inventory of the user stories specifically tailored for the frontend:
+-[User Stories view here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
 
 1. Improve the user registration process by implementing a user-friendly interface with clear instructions and error handling.
 2. Enhance the login functionality by incorporating additional security measures, such as two-factor authentication and password encryption.
