@@ -339,16 +339,16 @@ import os
 
  
 
-          - release: python manage.py makemigrations && python manage.py migrate
+          release: python manage.py makemigrations && python manage.py migrate
              web: gunicorn autotraderss_drf_backend.wsgi
 
 6. In settings.py update the value of the ALLOWED_HOSTS variable to include your Heroku app’s URL
 
-                  - ALLOWED_HOSTS = ['localhost', 'autotraderss-drf-backend.herokuapp.com']
+                  ALLOWED_HOSTS = ['localhost', 'autotraderss-drf-backend.herokuapp.com']
 
  7. In settings.py inside INSTALLED_APPS add corsheaders:
 
-                          -  'corsheaders',
+                            'corsheaders',
 
  8. In settings.py at the top of MIDDLEWARE add corsheaders middleware
 
@@ -369,18 +369,18 @@ import os
 
  10. In settings.py set allowed origins for network requests and enable cookies
 
-                     - if 'CLIENT_ORIGIN' in os.environ:
+                     if 'CLIENT_ORIGIN' in os.environ:
                       CORS_ALLOWED_ORIGINS = [
                      os.environ.get('CLIENT_ORIGIN')
                      ]
 
-                    - if 'CLIENT_ORIGIN_DEV' in os.environ:
+                    if 'CLIENT_ORIGIN_DEV' in os.environ:
                      extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
                       CORS_ALLOWED_ORIGIN_REGEXES = [
                        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
                        ]
 
-                    - CORS_ALLOW_CREDENTIALS = True
+                     CORS_ALLOW_CREDENTIALS = True
 
   11. In settings.py et the JWT_AUTH_SAMESITE to 'None'. Without this the cookies would be blocked:
 
@@ -397,11 +397,11 @@ import os
 
  13. In settings.py, replace the default SECRET_KEY variable as follows:
  
-   - SECRET_KEY = os.environ.get('SECRET_KEY')
+                  SECRET_KEY = os.environ.get('SECRET_KEY')
 
  14. In settings.py, set DEBUG as follows:
 
-   - DEBUG = 'DEV' in os.environ
+                 DEBUG = 'DEV' in os.environ
 
  15. In Heroku settings, config vars, copy the CLOUDINARY_URL and SECRET_KEY values from env.py and paste them
 
@@ -409,7 +409,7 @@ import os
 
  17. In teminal update requirements.txt file with command
 
-   - pip freeze > requirements.txt
+                pip freeze > requirements.txt
 
 18. Add, commit and push changes.
 
@@ -427,46 +427,46 @@ import os
 
 
 
-  - from .settings import (
-    JWT_AUTH_COOKIE, JWT_AUTH_REFRESH_COOKIE, JWT_AUTH_SAMESITE,
-    JWT_AUTH_SECURE,
-  )
+                 from .settings import (
+                 JWT_AUTH_COOKIE, JWT_AUTH_REFRESH_COOKIE, JWT_AUTH_SAMESITE,
+                 JWT_AUTH_SECURE,
+                 )
 
 
 ### dj-rest-auth logout view fix
 
-  @api_view(['POST'])
-def logout_route(request):
-    response = Response()
-    response.set_cookie(
-        key=JWT_AUTH_COOKIE,
-        value='',
-        httponly=True,
-        expires='Thu, 01 Jan 1970 00:00:00 GMT',
-        max_age=0,
-        samesite=JWT_AUTH_SAMESITE,
-        secure=JWT_AUTH_SECURE,
-    )
-    response.set_cookie(
-        key=JWT_AUTH_REFRESH_COOKIE,
-        value='',
-        httponly=True,
-        expires='Thu, 01 Jan 1970 00:00:00 GMT',
-        max_age=0,
-        samesite=JWT_AUTH_SAMESITE,
-        secure=JWT_AUTH_SECURE,
-    )
-    return response
+                    @api_view(['POST'])
+                    def logout_route(request):
+                      response = Response()
+                      response.set_cookie(
+                          key=JWT_AUTH_COOKIE,
+                          value='',
+                          httponly=True,
+                          expires='Thu, 01 Jan 1970 00:00:00 GMT',
+                          max_age=0,
+                          samesite=JWT_AUTH_SAMESITE,
+                          secure=JWT_AUTH_SECURE,
+                       )
+                     response.set_cookie(
+                         key=JWT_AUTH_REFRESH_COOKIE,
+                         value='',
+                         httponly=True,
+                         expires='Thu, 01 Jan 1970 00:00:00 GMT',
+                         max_age=0,
+                         samesite=JWT_AUTH_SAMESITE,
+                         secure=JWT_AUTH_SECURE,
+                     )
+                    return response
 
 24. In main urls.py file, import the logout_route:
 
- - from .views import root_route, logout_route
+                 from .views import root_route, logout_route
  
-  - urlpatterns = [
-    path('dj-rest-auth/logout/', logout_route),
-    path('dj-rest-auth/', include('dj_rest_auth.urls')),
+                     urlpatterns = [
+                    path('dj-rest-auth/logout/', logout_route),
+                    path('dj-rest-auth/', include('dj_rest_auth.urls')),
 
-   ]
+                    ]
  
  25. Add, commit and push changes.
 
@@ -475,10 +475,20 @@ def logout_route(request):
 
 ## Credits
 
+ - During the project setup and development, I extensively consulted the documentation provided by Code Institute, including the Django Rest documentation and various Django 
+   functionality links. The resources provided valuable insights and guidance throughout the project
+ - I am grateful to the Code Institute tutors for their assistance during the setup process and for helping me resolve version-related issues. Their explanations and suggestions were invaluable in 
+   overcoming the challenges I encountered.
+ - I would also like to express my heartfelt appreciation to my husband,  <span style="color: blue;">Dietmar Dewitz</span>,, for his unwavering support and guidance during the setup and delivery  
+   of the project. His assistance was instrumental in the successful completion of the project
+
 ## Online resources
-[Django Documentation](https://docs.djangoproject.com/en/3.2/)
-[Django REST Documentation](https://www.django-rest-framework.org/)
-[Python Documentation](https://docs.python.org/3/)
+
+- [Django Documentation](https://docs.djangoproject.com/en/3.2/)
+
+- [Django REST Documentation](https://www.django-rest-framework.org/)
+
+- [Python Documentation](https://docs.python.org/3/)
 
 <br>
 
