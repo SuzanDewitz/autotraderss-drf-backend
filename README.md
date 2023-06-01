@@ -54,7 +54,6 @@
 # User Stories
 
 - The primary objective of the API is to establish seamless communication between the backend and frontend components, enabling the fulfillment of user stories exclusively designed for the frontend aspect of the project. Below, you will find a comprehensive inventory of the user stories specifically tailored for the frontend:
--[User Stories view here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
 
 1. Improve the user registration process by implementing a user-friendly interface with clear instructions and error handling.
 2. Enhance the login functionality by incorporating additional security measures, such as two-factor authentication and password encryption.
@@ -66,7 +65,8 @@
 8. Build a robust messaging system that enables users to communicate with each other, facilitating seamless collaboration and information exchange.
 9. Integrate social media sharing options to allow users to share their achievements, content, or experiences with their social networks.
 10. Optimize the application's performance and loading times by implementing efficient caching mechanisms and minimizing unnecessary data transfers.
-   -[here](https://github.com/users/SuzanDewitz/projects/1/views/3)
+   -[User Stories 1 view here](https://github.com/users/SuzanDewitz/projects/1/views/3)
+   -[User Stories 2 view here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
 
 - Tasks were successfully implemented during the API development process. To track and manage these tasks, we utilized a Kanban board specific to the project. The Kanban board provides a visual representation of the workflow, allowing us to monitor the progress of tasks and their respective stages. This board serves as a centralized location where you can find a comprehensive list of all the tasks associated with the API development.
 
