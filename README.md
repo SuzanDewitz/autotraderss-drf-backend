@@ -37,8 +37,8 @@
 - [Testing](#testing)
 - [Validation](#validation)
      - [Bugs](#bugs)
-      - [Fixed Bugs](#fixed-bugs)
-      - [Remaining Bugs](#remaining-bugs)
+     - [Fixed Bugs](#fixed-bugs)
+     - [Remaining Bugs](#remaining-bugs)
 - [Technologies Used](#technologies-used)
      - [Languages and Frameworks Used](#languages-and-frameworks-used)
      - [Python Modules Used](#python-modules-used)
@@ -77,9 +77,9 @@
 
 <br>
 
-  - User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
-  - Kanban board for the backend can be found in a separate internal document[here](https://github.com/users/SuzanDewitz/projects/1/views/3)
-  - Issues for the backend can be found in a separate internal document[here](https://github.com/SuzanDewitz/autotraderss-drf-backend/issues)
+  #### User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
+  #### Kanban board for the backend can be found in a separate internal document [here](https://github.com/users/SuzanDewitz/projects/1/views/3)
+  #### Issues for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/issues)
 
 
 <br>
@@ -195,10 +195,14 @@ No known remaining bugs
 <br>
 
 ## Deploy to Heroku
+
+ #### The step i take Creating ElephantSQL
+
  - [Code Institute Guide](https://code-institute-students.github.io/deployment-docs/41-pp5-adv-fe/pp5-adv-fe-drf-01-create-a-database)
 
 
 1. Log in to [ElephantSQL.com] (https://www.elephantsql.com/) to access your dashboard
+
   - Click “Create New Instance”
 
   - Set up your plan:
@@ -251,7 +255,7 @@ In the Deploy tab:
 
 ###  The step i take Creating Heroku App
 
-  - Log into Heroku and go to the "Dashboard"
+  - Log into [Heroku](https://dashboard.heroku.com/apps) and go to the "Dashboard"
 
   - Click “Create new app”
    
@@ -267,46 +271,49 @@ In the Deploy tab:
 
   - In settings.py underneath the import for os import dj_database:
 
-  - import dj_database_url
+            import dj_database_url
 
   - In settings.py update the detabase like so:
 
-    -  import dj_database_url
+          import dj_database_url
 
   - In settings.py update the detabase like so:  
 
-      Database
-     https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+          Database
+          https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DEV' in os.environ:
-      DATABASES = {
-        'default': {
+       if 'DEV' in os.environ:
+            DATABASES = {
+            'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-     print("loading postgres ele")
-     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+            }
+          }
+       else:
+          print("loading postgres ele")
+       DATABASES = {
+          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+         }
     
          print('connected')
 
 3. In env.py file, add a new environment variable to Gitpod with the key set to DATABASE_URL, and the value to your ElephantSQL database URL
+import os
 
-    import os
+os.environ['CLOUDINARY_URL'] = 'cloudinary://YOURLINK'
 
-    os.environ['CLOUDINARY_URL'] = 'cloudinary://YOURLINK
+# os.environ['DEV'] = '1'
 
-    # os.environ['DEV'] = '1'
+os.environ['DATABASE_URL'] = 'postgres://YOURLINK'
 
-    os.environ['DATABASE_URL'] = 'postgres://YOURLINK
+    
+
 
 4. In the terminal make migrations:
 
-  - python3 manage.py makemigrations --dry-run
-     - python3 manage.py migrate
+  python3 manage.py makemigrations --dry-run
+  python3 manage.py migrate
+  
   - Create a superuser for your new database
 
   - python3 manage.py createsuperuser
@@ -344,7 +351,7 @@ else:
  8. In settings.py at the top of MIDDLEWARE add corsheaders middleware
 
    -  
- - MIDDLEWARE = [
+ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -353,7 +360,7 @@ else:
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-  - ]
+]
 
 
  9. Under the MIDDLEWARE list, set the ALLOWED_ORIGINS for the network requests made to the server with the following code:
@@ -465,9 +472,6 @@ def logout_route(request):
 
 
 ## Credits
-
-<br>
-<br>
 
 ## Online resources
 [Django Documentation](https://docs.djangoproject.com/en/3.2/)
