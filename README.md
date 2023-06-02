@@ -121,14 +121,27 @@
 
 ## Validation
 #### Python Validation (PEP8)
- - All Python code was manually checked using CI Python Linter The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed and blank lines. Re-testing did not reveal any errors.
-
+ - All Python code was manually checked using CI Python Linter The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed and blank lines. Re-testing did not reveal any errors. [CI Python Linter](https://pep8ci.herokuapp.com/) 
  - Settings.py and contact model, present some line too long warnings, ignored momentarily.
 
  <br>
 
 ## Bugs
+
+
+- settings.py error
+
+
+![settings.py](../docs/img/settings.py_error.png)
+
+
 ### Fixed Bugs
+
+
+ - settings.py no error
+
+
+![settings.py](../docs/img/noerror_settings.py.png)
 
 
 ### Remaining Bugs

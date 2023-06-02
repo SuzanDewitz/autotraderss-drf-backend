@@ -85,3 +85,111 @@
 - During the development of the project, the pycodestyle package played a crucial role in ensuring code quality. It was used to validate and fix any code-related issues consistently.
 I'm pleased to report that in the final deployed version, there were no validation errors detected by pycodestyle.This highlights the commitment to maintaining clean and compliant code
 throughout the development process.
+
+
+<br>
+
+   - settings.py error
+
+![settings.py](../docs/img/settings.py_error.png)
+
+
+<br>
+
+  - settings.py no error
+
+![settings.py](../docs/img/noerror_settings.py.png)
+
+
+<br>
+
+
+  - autotrader_dre_backend_url.py
+
+![autotrader_dre_backend_url.py](../docs/img/autotrader_drf_backend_urls.py.png)
+
+
+<br>
+  
+  
+  - autotrader_dre_backend_views.py
+
+![autotrader_dre_backend_views.py](../docs/img/autotrader_drf_backend_views.py.png)
+
+
+<br>
+
+  - autotrader_models.py
+
+![autotrader_models.py](../docs/img/autotrader_models.py.png)
+
+
+<br>
+
+ - autotrader_serializers.py
+
+![autotrader_serializers.py](../docs/img/autotrader_serializers.py.png)
+
+
+<br>
+
+ - autotrader_views.py
+
+![autotrader_views.py](../docs/img/autotrader_views.py.png)
+
+
+
+<br>
+
+
+ - profiles_views.py
+
+![profiles_views.py](../docs/img/profiles_views.py.png)
+
+
+
+<br>
+
+
+ - profiles_models.py
+
+![profiles_models.py](../docs/img/profiles_models.py.png)
+
+
+
+<br>
+
+
+ - profiles_serializers.py
+
+![profiles_serializers.py](../docs/img/profiles_serializers.py.png)
+
+
+
+<br>
+
+ - followers_views
+
+![followers_views](../docs/img/followers_views.py.png)
+
+
+
+<br>
+
+ - saved_views.py.
+
+![saved_views.py.](../docs/img/saved_views.py.png)
+
+
+<br>
+
+
+- followers_views.py
+
+![followers_views.py.py](../docs/img/followers_views.py.png)
+
+
+<br>
+
+
+[Back to top](#top)
