@@ -65,10 +65,12 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "autotraderss-drf-backend.herokuapp.com",
-    "8000-suzandewitz-autotraders-gr05qjegmu0.ws-eu98.gitpod.io",
+    'localhost',
+    'autotraderss-drf-backend.herokuapp.com',
+    '8000-suzandewitz-autotraders-gr05qjegmu0.ws-eu98.gitpod.io',
+    '8000-suzandewitz-autotraders-kf2xb65bwge.ws-eu99.gitpod.io',  
 ]
+
 
 
 # Application definition
@@ -154,10 +156,10 @@ if "DEV" in os.environ:
         }
     }
 else:
-    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
-DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
-
-
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
+    
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
