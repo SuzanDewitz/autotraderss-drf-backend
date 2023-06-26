@@ -65,11 +65,12 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [
-    'localhost',
     'autotraderss-drf-backend.herokuapp.com',
-    '8000-suzandewitz-autotraders-gr05qjegmu0.ws-eu98.gitpod.io',
-    '8000-suzandewitz-autotraders-kf2xb65bwge.ws-eu99.gitpod.io',  
+    '8000-suzandewitz-autotraders-kf2xb65bwge.ws-eu100.gitpod.io',
 ]
+
+
+
 
 
 
