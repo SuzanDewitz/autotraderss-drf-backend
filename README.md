@@ -17,12 +17,13 @@
 
 <br>
 
-[View the live project here](https://autotraderss-react.herokuapp.com/)
+  [View the live project here](https://autotraderss-react.herokuapp.com/)
 
 #### Links to the Frontend Project
 
- - [Frontend - Repository](https://github.com/SuzanDewitz/autotraderss-react-frontend)
- - [Frontend - Deployment](https://autotraderss-react.herokuapp.com/)
+   [Frontend - Repository](https://github.com/SuzanDewitz/autotraderss-react-frontend)
+
+   [Frontend - Deployment](https://autotraderss-react.herokuapp.com/)
 
 <br>
 
