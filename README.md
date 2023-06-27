@@ -104,14 +104,64 @@
 - Image Gallery Functionality: Integrate an image gallery feature that empowers sellers to upload multiple pictures of the autotraders, providing a more comprehensive visual representation.
 
 <br>
+
+## Technologies Used
+
+#### Languages and Frameworks Libraries Used
+ - Django: [Django](https://docs.djangoproject.com/en/3.2/)
+ - Python: [Python](https://www.python.org/)
+ - Django 3.2.14: [Django 3.2.14](https://pypi.org/project/Django/3.2.14/)
+ - Django Rest Framework 3.14.0: [Django Rest Framework 3.14.0](https://pypi.org/project/djangorestframework/3.14.0/)
+   
 <br>
 
+## Python Modules Used
+Built-in Packages/Modules
+  - [pathlib](https://docs.python.org/3/library/pathlib.html) - This module is used to work with filepaths. It provides a convenient and platform-independent way to manipulate paths, files, and directories in a Python script.
+   - [os](https://www.bing.com/search?FORM=U523DF&PC=U523&q=os) - The os module provides a portable way of using operating system dependent functionality. It offers various functions for interacting with the underlying operating system, such as file operations, environment variables, and process management. This module is essential for writing platform-independent code that can seamlessly work across different operating systems.
+
+
+## Packages Used
+- [cloudinary](https://pypi.org/project/cloudinary/1.30.0/): This package enables seamless integration with Cloudinary,
+   a cloud-based media management platform. It provides functionalities for storing, manipulating, and delivering images and 
+   videos in your Django project.
+- [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/0.3.0/) This package extends Django's
+  default file storage system to work with Cloudinary. It allows to easily store and retrieve files from  Cloudinary account 
+   within my Django application
+- [dj-database-url ](https://pypi.org/project/dj-database-url/0.5.0/): This package enables the use of the 'DATABASE_URL' environmental variable in the Django project settings file. It simplifies the process of 
+ connecting to a PostgreSQL database by parsing the URL and automatically configuring the database settings accordingly.
+ - [django-allauth](https://pypi.org/project/django-allauth/0.51.0/): django-allauth is a set of Django applications used for account registration, management, and 
+   authentication.
+   It provides customizable views, forms, and templates for handling user authentication, including features 
+   like social account 
+   integration, email verification, and password management.
+
+  - [dj-rest-auth](https://pypi.org/project/dj-rest-auth/2.2.5/): dj-rest-auth is a Django Rest Framework (DRF) extension that provides API endpoints for handling authentication 
+   in DRF-based projects. It offers endpoints for user registration, login, logout, password reset, and other authentication- 
+    related functionalities.
+
+- [django-filter](https://pypi.org/project/django-filter/22.1/): django-filter is a powerful application that allows dynamic filtering of Django QuerySets based on URL parameters. It provides a simple yet flexible syntax for specifying filters and integrates seamlessly with DRF.
+
+[djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/5.2.1/): djangorestframework-simplejwt is a JSON Web Token (JWT) authentication backend for the Django REST Framework. It provides an easy way to implement token-based authentication in DRF, allowing secure and stateless API authentication.
+
+[django-cors-headers](https://pypi.org/project/django-cors-headers/3.13.0/): django-cors-headers is a Django app that adds Cross-Origin Resource Sharing (CORS) headers to HTTP responses. It enables cross-origin requests from client-side JavaScript applications to interact with your Django backend.
+
+[gunicorn](https://pypi.org/project/gunicorn/20.1.0/): gunicorn is a Python WSGI HTTP server commonly used for deploying Django applications. It provides a robust and scalable server architecture, allowing your Django app to handle multiple concurrent requests efficiently.
+
+- [Pillow](https://pypi.org/project/Pillow/9.2.0/): Pillow is a fork of PIL (Python Imaging Library) and is a powerful library for image processing in Python. It provides a wide range of image manipulation functionalities, including resizing, cropping, applying filters, and more.
+
+- [psycopg2](https://pypi.org/project/psycopg2/2.9.3/): psycopg2 is a Python adapter for PostgreSQL databases. It allows Django to connect and interact with PostgreSQL databases, enabling efficient data storage and retrieval.
+ 
+- [python-dotenv](https://pypi.org/project/python-dotenv/0.21.0/): python-dotenv is a package that helps in setting key-value pairs from a .env file as environmental variables. It simplifies the process of managing sensitive configuration settings, such as database credentials or API keys, outside of your codebase.
+
 ## Programs and Tools Used
- - [drawSQL](https://drawsql.app/) -  Used to create the Database Schema/ERD (Entity-Relationship Diagram) for the project.
- - [Gitpod](https://gitpod.io/workspaces) - Gitpod was utilized as the primary code editor for this project, providing a cloud-based development environment.
- - [Git](https://git-scm.com/) - Git was used for version control throughout the project. The terminal was utilized to commit changes to Git and push them to the project's repository.
- - [GitHub](https://github.com/) - GitHub served as the remote repository for storing the project's code after it was pushed from Git. It provided collaboration features, issue tracking, and a 
-   centralized location for code hosting.
+- [drawSQL](https://drawsql.app/) drawSQL is a tool used to create a database schema or Entity-Relationship Diagram (ERD). It provides an intuitive interface for designing and visualizing the structure of a database, helping in planning and documentation of the project's database.
+ - [Gitpod:](https://gitpod.io/workspaces)
+    -  Gitpod was utilized as the code editor for this project. Gitpod provides an online integrated development environment (IDE) that enables developers to write, test, and debug code within a browser-based interface. It offers a pre-configured environment for easy project setup and collaboration.
+ - [Git](https://git-scm.com/)
+    -Git was employed for version control throughout the project. It is a widely used distributed version control system that allows developers to track changes, manage different versions of their codebase, and collaborate efficiently. The terminal was used to execute Git commands, such as committing changes and pushing them to the remote repository.
+ - [GitHub:](https://github.com/)
+    - GitHub serves as the repository hosting service where the project's code is stored after being pushed from Git. It provides a web-based platform for version control, code collaboration, and project management. GitHub offers features like issue tracking, pull requests, and code reviews, facilitating effective collaboration among team members.
 
 <br>
 
@@ -149,19 +199,7 @@
 No known remaining bugs
 
  ![image](./docs/img/validator/settings.py.png)
-<br>
-
-## Technologies Used
-
-#### Main Language Used:
-   -  Python
-
-#### Frameworks Libraries Used
- - Django: [Django](https://docs.djangoproject.com/en/3.2/)
- - Python: [Python](https://www.python.org/)
- - Django 3.2.14: [Django 3.2.14](https://pypi.org/project/Django/3.2.14/)
- - Django Rest Framework 3.14.0: [Django Rest Framework 3.14.0](https://pypi.org/project/djangorestframework/3.14.0/)
-
+ 
 <br>
 
 ## Python Modules Used
@@ -171,32 +209,17 @@ No known remaining bugs
 
 <br>
 
-## Packages Used
-- External Python Packages
-   + [cloudinary](https://pypi.org/project/cloudinary/) - Integration with Cloudinary for handling cloud-based media storage.
-   + [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/) - Integration with Cloudinary for storage backend in Django.
-   + [dj-database-url](https://pypi.org/project/dj-database-url/) - Allows the use of 'DATABASE_URL' environmental variable in the Django project settings file to connect to a PostgreSQL database.
-   + [django-allauth](https://pypi.org/project/django-allauth/) - Set of Django application used for account registration, management and authentication.
-   + [dj-rest-auth](https://pypi.org/project/dj-rest-auth/) - API endpoints for handling authentication in Django Rest Framework.
-   + [django-filter](https://pypi.org/project/django-filter/) - Application that enables dynamic QuerySet filtering based on URL parameters.
-   + [djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/) - JSON Web Token authentication backend for the Django REST Framework.
-   + [django-cors-headers](https://pypi.org/project/django-cors-headers/) - Django app that adds Cross-Origin Resource Sharing (CORS) headers to responses.
-   + [gunicorn](https://pypi.org/project/gunicorn/) - Python WSGI HTTP Server for hosting Django applications.
-   + [Pillow](https://pypi.org/project/Pillow/) - Fork of PIL, the Python Imaging Library, providing image processing capabilities.
-   + [psycopg2](https://pypi.org/project/psycopg2/) - Python PostgreSQL database adapter.
-   + [python-dotenv](https://pypi.org/project/python-dotenv/) - Utility for setting key-value pairs from a .env file as environmental variables.
-
 
 ## Deployment
 ### Forking the GitHub Repository
-1. Go to the project repository
+1. Go to [the project repository](https://github.com/SuzanDewitz/hangman-for-all)
 2. In the right most top menu, click the "Fork" button.
 3. There will now be a copy of the repository in your own GitHub account.
 
 <br>
 
 ## Making a local clone
-1. Go to the project repository
+1. Go to [the project repository](https://github.com/SuzanDewitz/hangman-for-all)
 2. Click on the "Code" button.
 3. Choose one of the three options (HTTPS, SSH or GitHub CLI) and then click copy.
 4. Open the terminal in you IDE program.
@@ -206,7 +229,7 @@ No known remaining bugs
 <br>
 
 ## Alternatively by using Gitpod:
-1. Go to the project repository
+1. Go to [the project repository](https://github.com/SuzanDewitz/hangman-for-all)
 2. Click the green button that says "Gitpod" and the project will now open up in Gitpod.
 
 <br>
