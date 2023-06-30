@@ -78,7 +78,7 @@
 
 <br>
 
-  #### User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
+  #### User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf- backend/blob/main/docs/userstories.md)
   #### Kanban board for the backend can be found in a separate internal document [here](https://github.com/users/SuzanDewitz/projects/1/views/3)
   #### Issues for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/issues)
 
@@ -87,6 +87,77 @@
 
 
 ## Database Schema
+Table: Users
+
+| user_id | username | email            | password | registration_date | car_type | 
+| ------- | -------- | ---------------- | -------- | ----------------- | ---------| 
+| 1       | johnD    | john@example.com | ******** | 2023-01-15        | mercedes-benz    | 
+| 2       | emmaS    | emma@example.com | ******** | 2023-02-10        | Nissan      | 
+| 3       | davidM   | david@example.com| ******** | 2023-03-05        | Renault| 
+
+*  The "user_id" column represents a unique identifier for each user entry. The "username" column stores the username of the user. The "email" column represents the email address associated with the user. The "password" column stores the password (hashed or encrypted) for user authentication. "car_type" column stores the type or brand of car associated with each user. 
+
+<br>
+
+Table: Autotrader
+| autotrader_id | autotrader_name | location         | contact_info      | 
+| ------------- | --------------- | ---------------- | ----------------- | 
+| 1             | AutoMax         | Berlin, GERMANY  | contact@automax   | 
+| 2             | CarConnect      | London, UK       | contact@carconnect| 
+| 3             | DriveTime       | Los Angeles, USA | contact@drivetime | 
+
+* The "autotrader_id" column represents a unique identifier for each autotrader entry. The "autotrader_name" column stores the name of the autotrader. The "location" column represents the location of the autotrader. The "contact_info" column stores the contact information for the autotrader. 
+
+<br>
+
+Table: Saved 
+| saved_id | user_id | autotrader_id | date_saved |
+| -------- | ------- | ------------- | ---------- |
+| 1        | 1       | 2             | 2023-06-28 |
+| 2        | 1       | 3             | 2023-06-29 |
+| 3        | 2       | 1             | 2023-06-30 |
+
+*  The "saved_id" column represents a unique identifier for each saved entry. The "user_id" column corresponds to the user who saved the entry, and the "autotrader_id" column corresponds to the autotrader being saved. The "date_saved" column represents the date when the entry was saved.
+
+<br>
+
+Table: FeedTable: 
+| feed_id | autotrader_id | post_content                     | post_date  |
+| ------- | ------------- | -------------------------------- | ---------- |
+| 1       | 1             | Check out our latest inventory!   | 2023-06-25 |
+| 2       | 2             | Exciting deals this weekend!      | 2023-06-27 |
+| 3       | 3             | Pre-owned vehicles on sale now!   | 2023-06-30 |
+
+* The feed_id: This column represents a unique identifier for each feed post. Each row in the table has a different "feed_id" value, allowing you to uniquely identify and reference each feed post.
+
+* The autotrader_id: This column stores the autotrader identifier associated with each feed post. It represents the autotrader responsible for creating or posting the feed. Each autotrader may have multiple feed posts, and the "autotrader_id" helps establish the relationship between the autotrader and their respective feed posts.
+
+*  The post_content: This column contains the content or message of the feed post. It includes information, announcements, updates, or promotional messages related to the autotrader.
+
+* The post_date: This column stores the date when the feed post was created or published. It helps track the timing of each post and allows users to view the posts in chronological order.
+
+<br>
+
+Table: Followers
+| follower_id | user_id | autotrader_id |
+| ----------- | ------- | ------------- |
+| 1           | 1       | 2             |
+| 2           | 3       | 1             |
+| 3           | 2       | 3             |
+
+- The "Followers" table represents the relationship between users and autotraders. Each row in the table signifies a follower relationship, where a user follows an autotrader.
+
+  - The "follower_id" column represents a unique identifier for each follower relationship entry.
+  - The "user_id" column represents the identifier of the user who is following the autotrader.
+  - The "autotrader_id" column represents the identifier of the autotrader being followed by the user.
+- For instance:
+  - Row 1 indicates that the user with user_id 1 is following the autotrader with autotrader_id 2.
+  - Row 2 indicates that the user with user_id 3 is following the autotrader with autotrader_id 1.
+  - Row 3 indicates that the user with user_id 2 is following the autotrader with autotrader_id 3.
+This table allows you to establish and track the followership relationships between users and autotraders. 
+
+<br>
+
 + The database schema depicted below served as the foundation for creating the project's database models.
 ![dbschema](docs/dbschema.png)
 
