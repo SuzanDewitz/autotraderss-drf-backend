@@ -249,12 +249,13 @@ Built-in Packages/Modules
  <br>
 
 ## Bugs
-
+#### Fixed Bugs
+ - [Click here](https://github.com/search?q=repo%3ASuzanDewitz%2Fautotraderss-drf-backend+fix&type=commits) to view a list of fixed bugs that has been completed.
 
 - settings.py error
 
 
-![settings.py](../docs/img/settings.py_error.png)
+- ![settings.py](../docs/img/settings.py_error.png)
 
 
 ### Fixed Bugs
