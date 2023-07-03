@@ -17,7 +17,7 @@
 
 <br>
 
-  [View the live project here](https://autotraderss-react.herokuapp.com/)
+  [View the live project here](https://autotraderss-drf-backend.herokuapp.com/)
 
 #### Links to the Frontend Project
 
@@ -150,11 +150,11 @@ Table: Followers
   - The "follower_id" column represents a unique identifier for each follower relationship entry.
   - The "user_id" column represents the identifier of the user who is following the autotrader.
   - The "autotrader_id" column represents the identifier of the autotrader being followed by the user.
-- For instance:
+    - For instance:
   - Row 1 indicates that the user with user_id 1 is following the autotrader with autotrader_id 2.
   - Row 2 indicates that the user with user_id 3 is following the autotrader with autotrader_id 1.
   - Row 3 indicates that the user with user_id 2 is following the autotrader with autotrader_id 3.
-This table allows you to establish and track the followership relationships between users and autotraders. 
++ This table allows to establish and track the followership relationships between users and autotraders. 
 
 <br>
 
@@ -230,9 +230,9 @@ Built-in Packages/Modules
  - [Gitpod:](https://gitpod.io/workspaces)
     -  Gitpod was utilized as the code editor for this project. Gitpod provides an online integrated development environment (IDE) that enables developers to write, test, and debug code within a browser-based interface. It offers a pre-configured environment for easy project setup and collaboration.
  - [Git](https://git-scm.com/)
-    -Git was employed for version control throughout the project. It is a widely used distributed version control system that allows developers to track changes, manage different versions of their codebase, and collaborate efficiently. The terminal was used to execute Git commands, such as committing changes and pushing them to the remote repository.
+    -Git is a widely adopted version control system that allows developers to track changes in their codebase. It provides a reliable and efficient way to manage code, enabling teams to collaborate seamlessly. By utilizing the terminal, developers can commit their changes to Git and subsequently push them to GitHub.
  - [GitHub:](https://github.com/)
-    - GitHub serves as the repository hosting service where the project's code is stored after being pushed from Git. It provides a web-based platform for version control, code collaboration, and project management. GitHub offers features like issue tracking, pull requests, and code reviews, facilitating effective collaboration among team members.
+    - GitHub, on the other hand, acts as a remote repository for hosting and managing Git projects. Once the changes are pushed from Git, they are securely stored on GitHub. It provides a centralized platform where multiple developers can access, review, and contribute to the codebase. GitHub offers additional features such as issue tracking, pull requests, and project management tools, which enhance collaboration and streamline the development workflow.
 
 <br>
 
