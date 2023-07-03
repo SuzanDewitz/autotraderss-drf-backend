@@ -35,9 +35,10 @@ REST_FRAMEWORK = {
             else "dj_rest_auth.jwt_auth.JWTCookieAuthentication"
         )
     ],
-    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
-    "PAGE_SIZE": 10,
-    "DATETIME_FORMAT": "%d %b %Y",
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+    'DATETIME_FORMAT': '%d %b %Y',
 }
 if "DEV" not in os.environ:
     REST_FRAMEWORK["DEFAULT_RENDERER_CLASSES"] = [
@@ -62,12 +63,14 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEBUG' in os.environ
+DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [
-    'autotraderss-drf-backend.herokuapp.com',
-    '8000-suzandewitz-autotraders-kf2xb65bwge.ws-eu100.gitpod.io',
+    "localhost",
+    "autotraderss-drf-backend.herokuapp.com",
+    "8000-suzandewitz-autotraders-gr05qjegmu0.ws-eu101.gitpod.io",
 ]
+
 
 # Application definition
 
@@ -115,8 +118,9 @@ if "CLIENT_ORIGIN_DEV" in os.environ:
     extracted_url = re.match(
         r"^.+-", os.environ.get("CLIENT_ORIGIN_DEV", ""), re.IGNORECASE
     ).group(0)
-    CORS_ALLOWED_ORIGIN_REGEXES = [rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$"]
-
+    CORS_ALLOWED_ORIGIN_REGEXES = [
+        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+    ]
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -155,26 +159,28 @@ else:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
-    
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation."
-        "UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation." "MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation." "CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation." "NumericPasswordValidator",
-    },
+      {
+        'NAME': 'django.contrib.auth.password_validation.'
+                'UserAttributeSimilarityValidator',
+      },
+      {
+        'NAME': 'django.contrib.auth.password_validation.'
+                'MinimumLengthValidator',
+      },
+      {
+        'NAME': 'django.contrib.auth.password_validation.'
+                'CommonPasswordValidator',
+      },
+      {
+        'NAME': 'django.contrib.auth.password_validation.'
+                'NumericPasswordValidator',
+      },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
