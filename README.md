@@ -78,7 +78,7 @@
 
 <br>
 
-  #### User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf- backend/blob/main/docs/userstories.md)
+  #### User stories for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/blob/main/docs/userstories.md)
   #### Kanban board for the backend can be found in a separate internal document [here](https://github.com/users/SuzanDewitz/projects/1/views/3)
   #### Issues for the backend can be found in a separate internal document [here](https://github.com/SuzanDewitz/autotraderss-drf-backend/issues)
 
@@ -88,7 +88,6 @@
 
 ## Database Schema
 Table: Users
-
 | user_id | username | email            | password | registration_date | car_type | 
 | ------- | -------- | ---------------- | -------- | ----------------- | ---------| 
 | 1       | johnD    | john@example.com | ******** | 2023-01-15        | mercedes-benz    | 
@@ -121,7 +120,7 @@ Table: Saved
 
 <br>
 
-Table: FeedTable: 
+Table: FeedTable
 | feed_id | autotrader_id | post_content                     | post_date  |
 | ------- | ------------- | -------------------------------- | ---------- |
 | 1       | 1             | Check out our latest inventory!   | 2023-06-25 |
@@ -129,11 +128,9 @@ Table: FeedTable:
 | 3       | 3             | Pre-owned vehicles on sale now!   | 2023-06-30 |
 
 * The feed_id: This column represents a unique identifier for each feed post. Each row in the table has a different "feed_id" value, allowing you to uniquely identify and reference each feed post.
-
-* The autotrader_id: This column stores the autotrader identifier associated with each feed post. It represents the autotrader responsible for creating or posting the feed. Each autotrader may have multiple feed posts, and the "autotrader_id" helps establish the relationship between the autotrader and their respective feed posts.
-
-*  The post_content: This column contains the content or message of the feed post. It includes information, announcements, updates, or promotional messages related to the autotrader.
-
+* The autotrader_id: This column stores the autotrader identifier associated with each feed post. It represents the autotrader responsible for creating or posting the feed. Each autotrader 
+  may have multiple feed posts, and the "autotrader_id" helps establish the relationship between the autotrader and their respective feed posts.
+* The post_content: This column contains the content or message of the feed post. It includes information, announcements, updates, or promotional messages related to the autotrader.
 * The post_date: This column stores the date when the feed post was created or published. It helps track the timing of each post and allows users to view the posts in chronological order.
 
 <br>
@@ -154,7 +151,7 @@ Table: Followers
   - Row 1 indicates that the user with user_id 1 is following the autotrader with autotrader_id 2.
   - Row 2 indicates that the user with user_id 3 is following the autotrader with autotrader_id 1.
   - Row 3 indicates that the user with user_id 2 is following the autotrader with autotrader_id 3.
-+ This table allows to establish and track the followership relationships between users and autotraders. 
+ This table allows to establish and track the followership relationships between users and autotraders. 
 
 <br>
 
@@ -193,46 +190,52 @@ Built-in Packages/Modules
 
 
 ## Packages Used
-- [cloudinary](https://pypi.org/project/cloudinary/1.30.0/): This package enables seamless integration with Cloudinary,
-   a cloud-based media management platform. It provides functionalities for storing, manipulating, and delivering images and 
-   videos in your Django project.
-- [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/0.3.0/) This package extends Django's
-  default file storage system to work with Cloudinary. It allows to easily store and retrieve files from  Cloudinary account 
-   within my Django application
-- [dj-database-url ](https://pypi.org/project/dj-database-url/0.5.0/): This package enables the use of the 'DATABASE_URL' environmental variable in the Django project settings file. It simplifies the process of 
- connecting to a PostgreSQL database by parsing the URL and automatically configuring the database settings accordingly.
- - [django-allauth](https://pypi.org/project/django-allauth/0.51.0/): django-allauth is a set of Django applications used for account registration, management, and 
-   authentication.
-   It provides customizable views, forms, and templates for handling user authentication, including features 
-   like social account 
-   integration, email verification, and password management.
+- [cloudinary](https://pypi.org/project/cloudinary/1.30.0/): This package enables seamless integration with Cloudinary,a cloud-based media management platform. It provides functionalities 
+  for storing, manipulating, and delivering images and videos in your Django project.
+- [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/0.3.0/) This package extends Django's default file storage system to work with Cloudinary. It allows to 
+  easily store and retrieve files from  Cloudinary account within my Django application
+- [dj-database-url ](https://pypi.org/project/dj-database-url/0.5.0/): This package enables the use of the 'DATABASE_URL' environmental variable in the Django project settings file. 
+  It simplifies the process of connecting to a PostgreSQL database by parsing the URL and automatically configuring the database settings accordingly.
+- [django-allauth](https://pypi.org/project/django-allauth/0.51.0/): django-allauth is a set of Django applications used for account registration, management, and authentication.
+  It provides customizable views, forms, and templates for handling user authentication, including features like social account integration, email verification, and password management.
+- [dj-rest-auth](https://pypi.org/project/dj-rest-auth/2.2.5/): dj-rest-auth is a Django Rest Framework (DRF) extension that provides API endpoints for handling authentication 
+  in DRF-based projects. It offers endpoints for user registration, login, logout, password reset, and other authentication- related functionalities.
+- [django-filter](https://pypi.org/project/django-filter/22.1/): django-filter is a powerful application that allows dynamic filtering of Django QuerySets based on URL parameters. It provides
+  a simple yet flexible syntax for specifying filters and integrates seamlessly with DRF.
+- [djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/5.2.1/): djangorestframework-simplejwt is a JSON Web Token (JWT) authentication backend for the Django 
+  REST Framework. It provides an easy way to implement token-based authentication in DRF, allowing secure and stateless API authentication.
+- [django-cors-headers](https://pypi.org/project/django-cors-headers/3.13.0/): django-cors-headers is a Django app that adds Cross-Origin Resource Sharing (CORS) headers to HTTP responses. 
+  It enables cross-origin requests from client-side JavaScript applications to interact with your Django backend.
+- [gunicorn](https://pypi.org/project/gunicorn/20.1.0/): gunicorn is a Python WSGI HTTP server commonly used for deploying Django applications. It provides a robust and scalable server 
+  architecture, allowing your Django app to handle multiple concurrent requests efficiently.
+- [Pillow](https://pypi.org/project/Pillow/9.2.0/): Pillow is a fork of PIL (Python Imaging Library) and is a powerful library for image processing in Python. It provides a wide range of image 
+  manipulation functionalities, including resizing, cropping, applying filters, and more.
+- [psycopg2](https://pypi.org/project/psycopg2/2.9.3/): psycopg2 is a Python adapter for PostgreSQL databases. It allows Django to connect and interact with PostgreSQL databases, 
+  enabling efficient data storage and retrieval.
+- [python-dotenv](https://pypi.org/project/python-dotenv/0.21.0/): python-dotenv is a package that helps in setting key-value pairs from a .env file as environmental variables. It simplifies 
+  the process of managing sensitive configuration settings, such as database credentials or API keys, outside of your codebase.
 
-  - [dj-rest-auth](https://pypi.org/project/dj-rest-auth/2.2.5/): dj-rest-auth is a Django Rest Framework (DRF) extension that provides API endpoints for handling authentication 
-   in DRF-based projects. It offers endpoints for user registration, login, logout, password reset, and other authentication- 
-    related functionalities.
+<br>
 
-- [django-filter](https://pypi.org/project/django-filter/22.1/): django-filter is a powerful application that allows dynamic filtering of Django QuerySets based on URL parameters. It provides a simple yet flexible syntax for specifying filters and integrates seamlessly with DRF.
+## Python Modules Used
+- Built-in Packages/Modules
+  + [pathlib](https://docs.python.org/3/library/pathlib.html)- Used to work with filepaths.
+  + [os](https://docs.python.org/3/library/os.html) - Provides a portable way of using operating system-dependent functionality.
 
-[djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/5.2.1/): djangorestframework-simplejwt is a JSON Web Token (JWT) authentication backend for the Django REST Framework. It provides an easy way to implement token-based authentication in DRF, allowing secure and stateless API authentication.
-
-[django-cors-headers](https://pypi.org/project/django-cors-headers/3.13.0/): django-cors-headers is a Django app that adds Cross-Origin Resource Sharing (CORS) headers to HTTP responses. It enables cross-origin requests from client-side JavaScript applications to interact with your Django backend.
-
-[gunicorn](https://pypi.org/project/gunicorn/20.1.0/): gunicorn is a Python WSGI HTTP server commonly used for deploying Django applications. It provides a robust and scalable server architecture, allowing your Django app to handle multiple concurrent requests efficiently.
-
-- [Pillow](https://pypi.org/project/Pillow/9.2.0/): Pillow is a fork of PIL (Python Imaging Library) and is a powerful library for image processing in Python. It provides a wide range of image manipulation functionalities, including resizing, cropping, applying filters, and more.
-
-- [psycopg2](https://pypi.org/project/psycopg2/2.9.3/): psycopg2 is a Python adapter for PostgreSQL databases. It allows Django to connect and interact with PostgreSQL databases, enabling efficient data storage and retrieval.
- 
-- [python-dotenv](https://pypi.org/project/python-dotenv/0.21.0/): python-dotenv is a package that helps in setting key-value pairs from a .env file as environmental variables. It simplifies the process of managing sensitive configuration settings, such as database credentials or API keys, outside of your codebase.
+<br>
 
 ## Programs and Tools Used
-- [drawSQL](https://drawsql.app/) drawSQL is a tool used to create a database schema or Entity-Relationship Diagram (ERD). It provides an intuitive interface for designing and visualizing the structure of a database, helping in planning and documentation of the project's database.
- - [Gitpod:](https://gitpod.io/workspaces)
-    -  Gitpod was utilized as the code editor for this project. Gitpod provides an online integrated development environment (IDE) that enables developers to write, test, and debug code within a browser-based interface. It offers a pre-configured environment for easy project setup and collaboration.
- - [Git](https://git-scm.com/)
-    -Git is a widely adopted version control system that allows developers to track changes in their codebase. It provides a reliable and efficient way to manage code, enabling teams to collaborate seamlessly. By utilizing the terminal, developers can commit their changes to Git and subsequently push them to GitHub.
- - [GitHub:](https://github.com/)
-    - GitHub, on the other hand, acts as a remote repository for hosting and managing Git projects. Once the changes are pushed from Git, they are securely stored on GitHub. It provides a centralized platform where multiple developers can access, review, and contribute to the codebase. GitHub offers additional features such as issue tracking, pull requests, and project management tools, which enhance collaboration and streamline the development workflow.
+- [drawSQL](https://drawsql.app/) drawSQL is a tool used to create a database schema or Entity-Relationship Diagram (ERD). It provides an intuitive interface for designing and visualizing the 
+  structure of a database, helping in planning and documentation of the project's database.
+- [Gitpod:](https://gitpod.io/workspaces)
+    - Gitpod was utilized as the code editor for this project. Gitpod provides an online integrated development environment (IDE) that enables developers to write, test, and debug code within a browser-based interface. It offers a pre-configured environment for easy project setup and collaboration.
+- [Git](https://git-scm.com/)
+    - Git is a widely adopted version control system that allows developers to track changes in their codebase. It provides a reliable and efficient way to manage code, enabling teams
+      to collaborate seamlessly. By utilizing the terminal, developers can commit their changes to Git and subsequently push them to GitHub.
+- [GitHub:](https://github.com/)
+    - GitHub, on the other hand, acts as a remote repository for hosting and managing Git projects. Once the changes are pushed from Git, they are securely stored on GitHub. 
+      It provides a centralized platform where multiple developers can access, review, and contribute to the codebase. GitHub offers additional features such as issue tracking, 
+      pull requests, and project management tools, which enhance collaboration and streamline the development workflow.
 
 <br>
 
@@ -243,7 +246,8 @@ Built-in Packages/Modules
 
 ## Validation
 #### Python Validation (PEP8)
- - All Python code was manually checked using CI Python Linter The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed and blank lines. Re-testing did not reveal any errors. [CI Python Linter](https://pep8ci.herokuapp.com/) 
+ - All Python code was manually checked using CI Python Linter The Linter reports had messages about exceeding the string length of 79 characters, which have been fixed and blank lines. 
+   Re-testing did not reveal any errors. [CI Python Linter](https://pep8ci.herokuapp.com/) 
  - Settings.py and contact model, present some line too long warnings, ignored momentarily.
 
  <br>
@@ -255,7 +259,7 @@ Built-in Packages/Modules
 - settings.py error
 
 
-- ![settings.py](../docs/img/settings.py_error.png)
+![settings.py](./docs/img/settings.py_error.png)
 
 
 ### Fixed Bugs
@@ -264,23 +268,17 @@ Built-in Packages/Modules
  - settings.py no error
 
 
-![settings.py](../docs/img/noerror_settings.py.png)
+![settings.py](./docs/img/noerror_settings.py.png)
 
 
 ### Remaining Bugs
 No known remaining bugs
 
- ![image](./docs/img/validator/settings.py.png)
+![image](./docs/img/validator/settings.py.png)
  
 <br>
 
-## Python Modules Used
-- Built-in Packages/Modules
-  + [pathlib](https://docs.python.org/3/library/pathlib.html)- Used to work with filepaths.
-  + [os](https://docs.python.org/3/library/os.html) - Provides a portable way of using operating system-dependent functionality.
-
-<br>
-
+[Back to top](#top)
 
 ## Deployment
 ### Forking the GitHub Repository
@@ -339,21 +337,19 @@ No known remaining bugs
 
 2. Creating Heroku App
 
-
-[Back to top](#top)
-
-
 ### Heroku Settings
 - You will need to set your Environment Variables - this is a key step to ensuring your application is deployed properly.
 
 1. In the Settings tab, click on Reveal Config Vars and set the following variables:
  + Key as ALLOWED_HOSTS and the value as the name of you project with '.herokuapp.com' appended to the end e.g. example-app.herokuapp.com. Click the Add button.
  + Key as CLOUDINARY_URL and the value as your cloudinary API Environment variable e.g. cloudinary://**************:**************@*********. Click the Add button.
-  + Key as SECRET_KEY and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as https://djecrety.ir. Click the Add button.
-  + Ensure the key DATABASE_URL is already populated. This should have been created automatically by Heroku.
-  + The DATABASE_URL should be copied into your local .env, created during the cloning process.
-  + To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key CLIENT_ORIGIN with the value set as the URL you will be sending the authentication request from.
-   + Additionally, a CLIENT_ORIGIN_DEV key can be set with the value of a development server (IP or URL) for use during local development.
+ + Key as SECRET_KEY and the value as a complex string which will be used to provide cryptographic signing. The use of a secret key generator is recommended such as https://djecrety.ir. 
+   Click the Add button.
+ + Ensure the key DATABASE_URL is already populated. This should have been created automatically by Heroku.
+ + The DATABASE_URL should be copied into your local .env, created during the cloning process.
+ + To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key CLIENT_ORIGIN with the value set as the URL you will be sending the 
+   authentication request from.
+ + Additionally, a CLIENT_ORIGIN_DEV key can be set with the value of a development server (IP or URL) for use during local development.
 
 <br>
 
@@ -363,7 +359,8 @@ In the Deploy tab:
     + Click on the Deploy tab and choose Github-Connect to Github.
     + Enter the GitHub repository name and click on Search.
     + Choose the correct repository for your application and click on Connect.
-2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the Deploy Branch button whenever you want a change made.
+2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual 
+   deployment requires you to push the Deploy Branch button whenever you want a change made.
 3. Once you have chosen your deployment method and have clicked Deploy Branch your application will be built and you should now see the View button, click this to open your application.
 
 <br>
@@ -413,7 +410,7 @@ In the Deploy tab:
          print('connected')
 
 3. In env.py file, add a new environment variable to Gitpod with the key set to DATABASE_URL, and the value to your ElephantSQL database URL
-import os
+     import os
 
               os.environ['CLOUDINARY_URL'] = 'cloudinary://YOURLINK'
 
@@ -439,17 +436,17 @@ import os
 
   - Click the Table queries button, select auth_user
 
-   - Click “Execute”, you should see the superuser details. This confirms the tables have been created and you can add data to your database
+  - Click “Execute”, you should see the superuser details. This confirms the tables have been created and you can add data to your database
 
-   - In Gitpod teminal install gunicorn library:
+  - In Gitpod teminal install gunicorn library:
 
            pip3 install gunicorn django-cors-headers
 
-    - Update requirements.txt bit running command:
+  - Update requirements.txt bit running command:
 
             pip freeze --local > requirements.txt
 
-       - Add a Procfile to the top level of the directory and add the following code:
+   - Add a Procfile to the top level of the directory and add the following code:
         release: python manage.py makemigrat
 
  
