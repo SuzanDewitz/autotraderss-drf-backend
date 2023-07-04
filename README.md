@@ -17,13 +17,11 @@
 
 <br>
 
-  [View the live project here](https://autotraderss-drf-backend.herokuapp.com/)
+  [VIEW THE LIVE PROJECT HERE](https://autotraderss-drf-backend.herokuapp.com/)
 
 #### Links to the Frontend Project
-
-   [Frontend - Repository](https://github.com/SuzanDewitz/autotraderss-react-frontend)
-
-   [Frontend - Deployment](https://autotraderss-react.herokuapp.com/)
+[FRONTEND - REPOSITORY](https://github.com/SuzanDewitz/autotraderss-react-frontend)
+[FRONTEND - DEPLOYMENT](https://autotraderss-react.herokuapp.com/)
 
 <br>
 
@@ -53,27 +51,25 @@
      - [Code](#code)
      - [Acknowledgements](#acknowledgements)
 
-
-
-<br>
 <br>
 
 # User Stories
 
-- The primary objective of the API is to establish seamless communication between the backend and frontend components, enabling the fulfillment of user stories exclusively designed for the frontend aspect of the project. Below, you will find a comprehensive inventory of the user stories specifically tailored for the frontend:
++ The primary objective of the API is to establish seamless communication between the backend and frontend components, enabling the fulfillment of user stories exclusively designed 
+  for the frontend aspect of the project. Below, you will find a comprehensive inventory of the user stories specifically tailored for the frontend:
 
-1. Improve the user registration process by implementing a user-friendly interface with clear instructions and error handling.
-2. Enhance the login functionality by incorporating additional security measures, such as two-factor authentication and password encryption.
-3. Develop a visually appealing homepage that showcases the project's key features and provides easy access to relevant information.
-4. Create an intuitive navigation menu that enables users to effortlessly browse through different sections and functionalities of the application.
-5. Implement a search feature that allows users to quickly find specific content or items within the application.
-6. Design an interactive dashboard that provides users with personalized insights, statistics, and notifications based on their preferences and activities.
-7. Enable users to customize their profile by adding profile pictures, personal information, and preferences.
-8. Build a robust messaging system that enables users to communicate with each other, facilitating seamless collaboration and information exchange.
-9. Integrate social media sharing options to allow users to share their achievements, content, or experiences with their social networks.
-10. Optimize the application's performance and loading times by implementing efficient caching mechanisms and minimizing unnecessary data transfers.
+I.Improve the user registration process by implementing a user-friendly interface with clear instructions and error handling.
+II.Enhance the login functionality by incorporating additional security measures, such as two-factor authentication and password encryption.
+III.Develop a visually appealing homepage that showcases the project's key features and provides easy access to relevant information.
+IV.Create an intuitive navigation menu that enables users to effortlessly browse through different sections and functionalities of the application.
+V.Implement a search feature that allows users to quickly find specific content or items within the application.
+VI.Design an interactive dashboard that provides users with personalized insights, statistics, and notifications based on their preferences and activities.
+VII.Enable users to customize their profile by adding profile pictures, personal information, and preferences.
+VIII.Build a robust messaging system that enables users to communicate with each other, facilitating seamless collaboration and information exchange.
+IX.Integrate social media sharing options to allow users to share their achievements, content, or experiences with their social networks.
+X.Optimize the application's performance and loading times by implementing efficient caching mechanisms and minimizing unnecessary data transfers.
    
-- Tasks were successfully implemented during the API development process. To track and manage these tasks, we utilized a Kanban board specific to the project. The Kanban board provides a visual 
++ Tasks were successfully implemented during the API development process. To track and manage these tasks, we utilized a Kanban board specific to the project. The Kanban board provides a visual 
   representation of the workflow, allowing us to monitor the progress of tasks and their respective stages. This board serves as a centralized location where you can find a comprehensive list of all the tasks associated with the API development.
 
 <br>
@@ -274,8 +270,6 @@ Built-in Packages/Modules
 ### Remaining Bugs
 No known remaining bugs
 
-![image](./docs/img/validator/settings.py.png)
- 
 <br>
 
 [Back to top](#top)
