@@ -21,6 +21,7 @@
 
 #### Links to the Frontend Project
 [FRONTEND - REPOSITORY](https://github.com/SuzanDewitz/autotraderss-react-frontend)
+
 [FRONTEND - DEPLOYMENT](https://autotraderss-react.herokuapp.com/)
 
 <br>
