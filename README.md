@@ -620,6 +620,8 @@ In the Deploy tab:
 - I would also like to express my heartfelt appreciation to my husband,<a href="#" style="color: blue; text-decoration:none;">
   Dietmar Dewitz</a>, for his unwavering support and guidance during the setup and delivery of the project.
   His assistance was instrumental in the successful completion of the project.
+- Grateful to my mentor <a href="#" style="color: blue; text-decoration: none;">Antonio Rodriguez</a> for his invaluable guidance and support throughout
+   this project. His expertise and encouragement played a crucial role in my growth and success. Thankful for their unwavering support.
 
 <br>
 
