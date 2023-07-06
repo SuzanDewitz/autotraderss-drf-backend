@@ -4,9 +4,9 @@
 
 <br>
 
-* Autotrader is a vehicle marketplace platform designed for used cars and new cars. It provides a platform for users to create their own listings and sell their used and new cars.
-  Additionally, users can search for cars if they are looking to buy a car.The platform offers registration functionality, allowing users to access more features such as 
-  saving their favorite cars and following car dealerships to stay updated on their latest inventory.
+*Autotrader is an innovative vehicle marketplace platform exclusively tailored for the sale and purchase of used cars. It provides a platform for users to create their 
+  own listings and sell their used and new cars. Additionally, users can search for cars if they are looking to buy a car.The platform offers registration functionality, 
+  allowing users to access more features such as saving their favorite cars and following car dealerships to stay updated on their latest inventory.
 
 * The backend of Autotrader is powered by the Django REST framework. The API serves as the bridge between the frontend and the database, handling various functionalities. This 
   includes user authentication and authorization, management of user profiles and listings, and processing search queries. The API ensures seamless communication between the 
