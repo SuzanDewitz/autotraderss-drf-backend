@@ -26,7 +26,7 @@
 - Monitoring system performance
 - Analyzing logs for errors or issues
 - Responding to system alerts
-- 
+  
 ![autotrader_dre_backend_url.py](../docs/img/AutotraderList.png)
 
 ![autotrader_dre_backend_url.py](../docs/img/profileList.png)
