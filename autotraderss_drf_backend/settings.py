@@ -40,7 +40,16 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = [
+    "localhost",
+    "autotraderss-drf-backend.herokuapp.com",
+    "8000-suzandewitz-autotraders-9n9gdt4a27p.ws-eu105.gitpod.io",
+]
+
+# Add Render.com URL to allowed hosts
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 
