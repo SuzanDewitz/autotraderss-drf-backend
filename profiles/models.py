@@ -18,20 +18,16 @@ class Profile(models.Model):
     postcode = models.CharField(max_length=10)
     email = models.CharField(max_length=50)
     phone = models.CharField(max_length=14)
-    image = models.ImageField(
-        upload_to='images/', default='../default_profile_enctdp'
-    )
+    image = models.ImageField(upload_to="images/", default="../default_profile_enctdp")
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ["-created_at"]
 
     def __str__(self):
         return f"{self.owner}'s profile"
 
+    def create_profile(sender, instance, created, **kwargs):
+        if created:
+            Profile.objects.create(owner=instance)
 
-def create_profile(sender, instance, created, **kwargs):
-    if created:
-        Profile.objects.create(owner=instance)
-
-
-post_save.connect(create_profile, sender=User)
+    post_save.connect(create_profile, sender=User)

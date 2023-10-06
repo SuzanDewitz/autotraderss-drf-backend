@@ -20,13 +20,13 @@ class AutotraderList(generics.ListCreateAPIView):
         DjangoFilterBackend,
     ]
     filterset_fields = [
-        'owner__followed__owner__profile',
-        'saved__owner__profile',
-        'owner__profile',
+        "owner__followed__owner__profile",
+        "saved__owner__profile",
+        "owner__profile",
     ]
     search_fields = [
-        'owner__username',
-        'title',
+        "owner__username",
+        "title",
     ]
 
     def perform_create(self, serializer):
@@ -38,6 +38,7 @@ class AutotraderDetails(generics.RetrieveUpdateDestroyAPIView):
     Detailed view of a autotrader posting.
     Update or delete a posting for owner of the post.
     """
+
     serializer_class = AutotraderSerializer
     permission_classes = [IsOwnerOrReadOnly]
-    queryset = Autotrader.objects.all()        
+    queryset = Autotrader.objects.all()
