@@ -68,7 +68,7 @@ DEBUG = "DEV" in os.environ
 ALLOWED_HOSTS = [
     "localhost",
     "autotraderss-drf-backend.herokuapp.com",
-    "8000-suzandewitz-autotraders-9n9gdt4a27p.ws-eu105.gitpod.io",
+    "8000-suzandewitz-autotraders-eejpsyzsvdg.ws-eu120.gitpod.io",
 ]
 
 # Add Render.com URL to allowed hosts
@@ -161,8 +161,10 @@ if "DEV" in os.environ:
     }
 else:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+    'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL", "sqlite:///db.sqlite3")
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
